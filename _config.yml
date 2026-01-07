@@ -1,25 +1,23 @@
-title: "Help Center"
-description: "Product Support & Knowledge Base"
-baseurl: ""
-url: "https:pranayb23.github.io/github_pages"
 
-remote_theme: just-the-docs/just-the-docs
+# Use Just the Docs via remote theme (and disable the default GH Pages theme)
+theme: null
+remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
-search_enabled: true
-aux_links:
-  "Contact Support":
-    - "https://your-support-url"
-footer_content: "© {{ site.time | date: '%Y' }} Your Company"
+# ✅ Tell Just the Docs to load your custom CSS
+just_the_docs:
+  # Path is relative to the site root (_site) — no leading slash
+  custom_css: assets/css/custom.css
+
+# (rest of your config)
+markdown: kramdown
+kramdown:
+  input: GFM
 
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
-collections:
-  categories:
-    output: true
-    permalink: /:collection/:name/
-  articles:
-    output: true
-    permalink: /:collection/:name/
+# If this is a project site (repo pages), keep these accurate:
+url: "https://pranayb23.github.io"
+baseurl: "/github_pages"
