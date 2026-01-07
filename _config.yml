@@ -1,0 +1,25 @@
+title: "Help Center"
+description: "Product Support & Knowledge Base"
+baseurl: ""
+url: "https://<your-username>.github.io"
+
+remote_theme: just-the-docs/just-the-docs
+
+search_enabled: true
+aux_links:
+  "Contact Support":
+    - "https://your-support-url"
+footer_content: "© {{ site.time | date: '%Y' }} Your Company"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  categories:
+    output: true
+    permalink: /:collection/:name/
+  articles:
+    output: true
+    permalink: /:collection/:name/
