@@ -41,19 +41,15 @@
 
 
 /* Garden-style callouts */
-.note, .tip, .caution, .warning {
-  position: relative;
-  padding: 12px 16px 12px 44px;
-  border-radius: 8px;
-  margin: 1rem 0;
-  border: 1px solid #e6e6e6;
-  background: #fff;
+
+/* Force Caution block to be bold and red */
+blockquote.caution {
+  color: #cc0000;            /* Red text */
+  font-weight: 700;          /* Bold */
+  border-left: 4px solid #cc0000; /* Optional: red left border */
+  padding-left: 12px;
+  background-color: #fff5f5; /* Light red background for emphasis */
 }
-.note::before, .tip::before, .caution::before, .warning::before {
-  content: ""; position: absolute; left: 12px; top: 12px;
-  width: 16px; height: 16px; border-radius: 3px;
+blockquote.caution strong:first-child {
+  color: #cc0000;            /* Ensure the title stays red */
 }
-.caution{ border-color:#f29b9b; background:#fff8ea } .caution::before{ background:#cc4b4b }
-.warning{ border-color:#f6c87a; background:#fff1f1 } .warning::before{ background:#e49a0d }
-.note{ border-color:#b9d6fb; background:#f5faff } .note::before{ background:#3d83e6 }
-.tip{ border-color:#bfe6cc; background:#f2fff6 } .tip::before{ background:#33a86f }
