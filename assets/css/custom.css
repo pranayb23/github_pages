@@ -39,35 +39,21 @@
   font-weight: 600;
 }
 
-/* Specific variants (Zendesk-like palette) */
-.caution {
-  border-color: #f6c87a;
-  background: #fff8ea;
-}
-.caution::before {
-  background: linear-gradient(180deg, #f0b84b, #e49a0d);
-}
 
-.warning {
-  border-color: #f29b9b;
-  background: #fff1f1;
+/* Garden-style callouts */
+.note, .tip, .caution, .warning {
+  position: relative;
+  padding: 12px 16px 12px 44px;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #e6e6e6;
+  background: #fff;
 }
-.warning::before {
-  background: linear-gradient(180deg, #e06363, #cc4b4b);
+.note::before, .tip::before, .caution::before, .warning::before {
+  content: ""; position: absolute; left: 12px; top: 12px;
+  width: 16px; height: 16px; border-radius: 3px;
 }
-
-.note {
-  border-color: #b9d6fb;
-  background: #f5faff;
-}
-.note::before {
-  background: linear-gradient(180deg, #6aa7f7, #3d83e6);
-}
-
-.tip {
-  border-color: #bfe6cc;
-  background: #f2fff6;
-}
-.tip::before {
-  background: linear-gradient(180deg, #4fc087, #33a86f);
-}
+.caution{ border-color:#f6c87a; background:#fff8ea } .caution::before{ background:#e49a0d }
+.warning{ border-color:#f29b9b; background:#fff1f1 } .warning::before{ background:#cc4b4b }
+.note{ border-color:#b9d6fb; background:#f5faff } .note::before{ background:#3d83e6 }
+.tip{ border-color:#bfe6cc; background:#f2fff6 } .tip::before{ background:#33a86f }
