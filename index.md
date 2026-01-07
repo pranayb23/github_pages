@@ -35,22 +35,19 @@ This project is a **Jekyll-based documentation site** styled like Zendesk Help C
 - Update `custom.css` for branding.
 - Add callouts (e.g., **Caution**, **Note**) using Markdown:
    
-  > **Caution**
-  > This action is irreversible.
-  {: .caution}
 
-  > **Note**
-  > You can restore settings from a previous export.
-  {: .note}
+> **Caution**
+> This action is irreversible.
+{: .caution}
 
-  > **Tip**
-  > Keyboard shortcut: press `?` to open the command palette.
-  {: .tip}
+> **Warning**
+> Never share your API secret publicly.
+{: .warning}
 
-  > **Warning**
-  > Never share your API secret publicly.
-  {: .warning}
+> **Note**
+> You can restore settings from a previous export.
+{: .note}
 
-
-## License
-This project is open-source under the [MIT License](LICENSE).
+> **Tip**
+> Keyboard shortcut: press `?` to open the command palette.
+{: .tip}
