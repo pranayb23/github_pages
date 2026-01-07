@@ -1,3 +1,52 @@
+---
+# Required frontmatter to ensure Jekyll processes this page
+---
+
+@import "vendor/tailwind";
+@import "garden";
+{%- if site.search_enabled -%}
+@import "search";
+{%- endif %}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+
+  &:hover::before {
+    display: inline-block;
+    content: ' ';
+    background-image: url('{{ "/assets/images/link-fill.svg" | relative_url }}');
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: -20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+h1:hover::before {
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  top: calc(50% - 9px);
+  left: -22px;
+}
+
+.heading_link {
+  @extend .text-grey-800;
+  @extend .no-underline;
+  @extend .hover\:no-underline;
+}
+
 /* Zendesk-like styling */
 .category-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 16px; }
 .category-card { border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; background: #fff; text-decoration: none; color: inherit; }
