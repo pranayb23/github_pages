@@ -53,7 +53,7 @@
   content: ""; position: absolute; left: 12px; top: 12px;
   width: 16px; height: 16px; border-radius: 3px;
 }
-.caution{ border-color:#f6c87a; background:#fff8ea } .caution::before{ background:#e49a0d }
-.warning{ border-color:#f29b9b; background:#fff1f1 } .warning::before{ background:#cc4b4b }
+.caution{ border-color:#f29b9b; background:#fff8ea } .caution::before{ background:#cc4b4b }
+.warning{ border-color:#f6c87a; background:#fff1f1 } .warning::before{ background:#e49a0d }
 .note{ border-color:#b9d6fb; background:#f5faff } .note::before{ background:#3d83e6 }
 .tip{ border-color:#bfe6cc; background:#f2fff6 } .tip::before{ background:#33a86f }
